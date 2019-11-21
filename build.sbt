@@ -23,7 +23,7 @@ lazy val sbtPackageClient = (project in file(".")).settings(
   libraryDependencies += {
     val currentSbtVersion = (sbtBinaryVersion in pluginCrossBuild).value
     Defaults.sbtPluginExtra(
-      "com.typesafe.sbt" % "sbt-native-packager" % "1.3.2" % "provided",
+      "com.typesafe.sbt" % "sbt-native-packager" % "1.3.25" % "provided",
       currentSbtVersion,
       scalaBinaryVersion.value
     )
